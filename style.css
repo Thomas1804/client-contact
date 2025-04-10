@@ -1,47 +1,86 @@
+:root {
+    --bg-light: #F9F4F0;
+    --primary: #A47551;
+    --secondary: #D6A77A;
+    --accent: #8C5C3A;
+    --text-dark: #3D2B1F;
+    --white: #ffffff;
+    --error: #D9534F;
+    --success: #5CB85C;
+    --border: #DDD0C8;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
     margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
 }
 
 .container {
-    width: 400px;
-    margin: 80px auto;
+    max-width: 500px;
+    margin: 60px auto;
     padding: 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-h1 {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     text-align: center;
-    color: #333;
 }
 
-label {
-    display: block;
-    margin-top: 15px;
-    color: #555;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-input[type="text"], input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
+input[type="text"], input[type="email"] {
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    font-size: 1rem;
 }
 
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
+button, input[type="submit"] {
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
     font-weight: bold;
-    margin-top: 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
+button:hover, input[type="submit"]:hover {
+    background-color: var(--primary);
+}
+
+.success, .error {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.success {
+    background-color: #e7f7e7;
+    color: var(--success);
+    border-left: 5px solid var(--success);
+}
+
+.error {
+    background-color: #fbecec;
+    color: var(--error);
+    border-left: 5px solid var(--error);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
 }
