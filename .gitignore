@@ -1,0 +1,29 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# XAMPP and local server config files (if any)
+xampp-control.ini
+
+# Ignore sensitive files (if present)
+.env
+*.env
+config.php
+
+# Ignore log files
+*.log
+
+# Ignore IDE/editor folders
+.vscode/
+.idea/
+.DS_Store
+
+# Ignore database dumps
+*.sql
+
+# Ignore vendor folders (if using Composer)
+vendor/
+
+# Node (if ever used)
+node_modules/
+vendor/
