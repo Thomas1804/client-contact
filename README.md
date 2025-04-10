@@ -1,6 +1,4 @@
-# client-contact-management
- 
-# client-contact-management
+ # client-contact-management
  
 A simple PHP and MySQL web application to manage clients and their contacts
 
