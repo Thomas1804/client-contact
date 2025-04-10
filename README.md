@@ -1,5 +1,7 @@
 # client-contact-management
  
+# client-contact-management
+ 
 A simple PHP and MySQL web application to manage clients and their contacts
 
 # Features
@@ -12,22 +14,30 @@ A simple PHP and MySQL web application to manage clients and their contacts
 # Getting Started
 1. Start XAMPP (Apache and MySQL)
 2. Import the database in phpMyAdmin
-3. Visit "http://localhost/client-contact"
+3. Move project folder inside "C:\xampp\htdocs"
+4. Visit "http://localhost/client-contact"
 
 # Folder Structure
 * 'connect.php'- Helps with the database connection
-* 'client_form.php'- Form for adding a new client 
-* 'add_client.php'- Logic for inserting new client data
-* 'add_contact.php'- inserting new contact data
-* 'client_form.php'- Form for adding a new client
-* 'clients.php'- Displays a list of all clients
-* 'contact_form'- Form for adding a new contact
+* 'client_form.php'- Client creation form
+* 'add_client.php'- Adds clients
+* 'add_contact.php' Adds contacts
+* 'clients.php'- View all clients anf linked contacts
+* 'contacts.php'- View all contacts
+* 'contact_form'- Contact creation form 
 * 'index.php'- Homepage
-* 'README.md'- Scope of project
-* 'save_client.php'- handler for saving client data
-* 'save_contact.php'- handler saving contact data
-* 'style.css'- Styling and layouot of project
-* 'unlink_contact'- Deleting a contact
+* 'README.md' This file
+* 'save_client.php' Logic for saving client
+* 'save_contact.php'- Logic for saving contact and generating client code
+* 'style.php'- Project styling(theme)
+* 'unlink_contact'- Logic to unlink contact from a client
+* 'client_contact_management_db.sql' - MysSQL export of database, imported from phpMyAdmin
+
+
+
+# Database Setup
+Make sure to import the `client_contact_db.sql` file using phpMyAdmin. It includes all the necessary tables (`Client`, `Contact`) with relationships.
+
 
 # License 
 MIT
